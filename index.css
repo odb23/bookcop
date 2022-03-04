@@ -2,23 +2,53 @@
     margin: 0;
 }
 
-header .nav {
-    text-justify:auto;
-    background-color:  #F8F9F9;
-    cursor: auto;
+body {
+    position: relative;
+    background-color: #f8f9f9;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
 }
-.nav-contents {
-    padding: 10px;
-    padding-left: 20px;
-    margin:auto;
+
+.clr{
+    clear: both;
+}
+
+.container1{
+    width: 90%;
+    margin: auto;
+    overfloW: hidden;
+}
+
+.container2{
+    width: 80%;
+    margin: auto;
+    overfloW: hidden;
+}
+
+.container2 h1{
+    font-size: 2.1em;
+    word-spacing: 0.1em;
+    line-height: 1em;
+}
+
+header {
+    background-color:  #F2F2F2;
+    cursor: auto;
+    padding: 15px;
+}
+
+ .nav-contents {
+    display: inline;
 }
 
 #signUp {
     float: right;
-    padding: 3px 15px;
+    padding: 5px 30px;
     border: none;
     cursor: pointer;
-    background-color: #F8F9F9;
+    background-color: #F2F2F2;
+    font-size: 16px;
 }
 
 #signUp:hover {
@@ -26,24 +56,85 @@ background-color: #e3e6e8;
 border-radius: 25px;
 }
 
-header h2 {
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    margin-top: 16px;
+#navbar{
+    margin: 50px 0;
 }
 
+#navbar h1{
+    text-align: center;
+}
+
+#review-section{
+    text-align: center;
+    margin: 55px auto;
+}
+
+.block{
+    float: left;
+    width: 50%;
+}
+.block1{
+    text-align: center;
+    float: left;
+    width: 40%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.block2{
+    float: right;
+    width: 58%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 30em;
+    overflow-y: none;
+}
 footer {
-    padding: 5px;
-    position: absolute;
     bottom: 0;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 50px;
     background-color: black;
     color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
 }
 
 footer li {
-    list-style: none;
-    display: inline-block;
+    display: inline;
+    padding-right: 10px;
 }
+
+footer li:hover {
+    color: #e3e6e8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: black;
+}
+
+@media (max-width: 750px) {
+    .block1{
+        width: 100%;
+        float: none;
+    }
+
+    .block2{
+        width: 100%;
+        float: none;
+    }
+}
+
