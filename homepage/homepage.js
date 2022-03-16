@@ -6,8 +6,24 @@ function showHomePage() {
     tabcontents[i].style.display = "none";
   }
   document.getElementById('HomePage').style.display = "block";
+
+  // reader's books stats donut chart
+new DonutChart(document.getElementById('reading-donut'), {
+    data: [
+      { label: 'green', value: 250, color: '#51e55b' },
+      { label: 'blue', value: 180, color: '#558eff' },
+      { label: 'yellow', value: 70, color: '#ffea5f' },
+    ],
+    holeSize: 0.65,
+    animationSpeed: 0.4,
+});
 }
 showHomePage();
+
+document.getElementById('logo').onclick = function() {
+  showHomePage();
+}
+
 
 // onclick event from nav buttons
 function openTab(navName) {
@@ -39,13 +55,4 @@ for (let i=0; i<tabLinks.length; i++) {
   }
 }
 
-new DonutChart(document.getElementById('reading-donut'), {
-    data: [
-      { label: 'green', value: 250, color: '#51e55b' },
-      { label: 'blue', value: 180, color: '#558eff' },
-      { label: 'yellow', value: 70, color: '#ffea5f' },
-    ],
-    holeSize: 0.65,
-    animationSpeed: 0.4,
-});
 //B1E551
