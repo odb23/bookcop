@@ -1,15 +1,18 @@
 *{
     margin: 0;
-    border: red solid 0.1px;
-    box-sizing: border-box;
+    /* border: red solid 0.1px;
+    box-sizing: border-box; */
 }
 
 body {
     position: relative;
-    background-color: #f8f9f9;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
+}
+
+.rel-pos{
+    position: relative;
 }
 
 .pos-inblock{
@@ -87,21 +90,33 @@ font-size: 12px;
     padding: 0 20px; 
     padding-top:20px;  
     margin-bottom: 120px;
+    cursor: pointer;
 }
 
-#nav-bar ul {
+#nav-bar .tab {
     list-style: none;
     padding: 0;
 }
 
-#nav-bar li {
-    padding: 20px 0 20px 20px;
+#nav-bar .tablinks{
+    background-color: #e6e6e6;
+    width: 100%;
+    font-size: inherit;
+    border: none;
+    padding: 20px 0;
     margin: 0 auto;
+    cursor: pointer;
 }
 
-#nav-bar li:hover {
-background-color: #e0e0e0;
+#nav-bar .tablinks:hover {
+    background-color: #ddd;
 }
+
+#nav-bar .tablinks.active {
+    background-color: #ccc;
+}
+
+
 
 .container2-h1{
     margin-left: 40px;
@@ -125,6 +140,36 @@ background-color: #e0e0e0;
     padding-left: 0;
     padding-right: 0;
 }
+
+#chart-card{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#reading-donut{
+   width: 380px;
+   height: 200px
+}
+
+.legend{
+    height: 20px;
+    width: 20px;
+}
+
+#legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #legend-container p,h2{
+    text-align: center;
+} */
+
 
 @media (max-width: 1000px) {
     .container1{
