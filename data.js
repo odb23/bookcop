@@ -28,7 +28,7 @@ export const quotes = [
     },
 ];
 
-export const books = [
+export const bookRecommendations = [
     {
         quoteText: "",
         author: "Jane Doe"
