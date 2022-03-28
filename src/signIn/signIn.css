@@ -1,0 +1,94 @@
+main {
+    width: 20vw;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: 2rem;
+    padding-top: .8rem;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    font-size:x-large;
+}
+.mt2 {
+    margin-top: 2.5vh;
+}
+
+.mt4 {
+    margin-top: 4vh;
+}
+
+.block{
+display: block;
+}
+
+.input-field {
+    width: 95%;
+    padding: 4px;
+    font-size: large;
+}
+
+.input-field:hover{
+    color: white;
+    background-color: black;
+}
+
+.rem-me:checked{
+    background-color: black
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    transition: opacity .25s ease-in;
+}
+
+.link:hover{
+    opacity: 0.5;
+    transition: opacity .25s ease-in;
+}
+
+
+.link:active{
+    opacity: 0.85;
+    transition: opacity .25s ease-in;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px 12px;
+    font-size: large;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+@media (max-width: 1150px) {
+    main {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 950px) {
+    main {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 45vw;
+    }
+}
