@@ -34,10 +34,12 @@
                     with other
                     readers.
                 </h1>
-                <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn btn" type="button" value="Get Started" />
+                <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn btn" type="button"
+                    value="Get Started" />
             </div>
         </main>
 
+        <!--Review Section-->
         <section id="review-section">
             <div class="block1">
                 <h1 class="animate__animated animate__backInLeft">
@@ -45,20 +47,66 @@
                     from users:
                 </h1>
             </div>
-            <article class="block2 animate__animated animate__backInRight">
-                <p><strong> Jane Doe -</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
-                    reiciendis et facilis quam ut amet,
-                    error
-                    nihil minima pariatur voluptatem, blanditiis consequatur! Expedita ducimus itaque numquam qui earum
-                    autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat eaque, dignissimos repellat
-                    iure velit, earum dolor nostrum id officia dolore ratione obcaecati quaerat non aliquam ducimus
-                    itaque fugiat explicabo fuga.
-                </p>
-                <div class="no-float"></div>
+            <article class="block2 animate__animated animate__backInRight slideshow-container">
+                <div class="slide">
+                    <p>Jane Doe</p>
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        reiciendis et facilis quam ut amet,
+                        error
+                        nihil minima pariatur voluptatem, blanditiis consequatur! Expedita ducimus itaque numquam qui
+                        earum
+                        autem.
+                    </q>
+                </div>
+                <div class="slide">
+                    <p>ODB gan gan</p>
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        reiciendis et facilis quam ut amet,
+                        error
+                        nihil minima pariatur voluptatem, blanditiis consequatur! Expedita ducimus itaque numquam qui
+                        earum
+                        autem.
+                    </q>
+                </div>
+                <div class="slide">
+                    <p>Daniel Don</p>
+                    <q> nihil minima pariatur voluptatem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                        libero
+                        reiciendis et facilis quam ut amet,
+                        error
+                        blanditiis consequatur! Expedita ducimus itaque numquam qui earum
+                        autem.
+                    </q>
+                </div>
+                <div class="slide">
+                    <p>Angela Morris</p>
+                    <q>reiciendis et facilis quam ut amet, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum libero
+                        error
+                        nihil minima pariatur voluptatem, blanditiis consequatur! Expedita ducimus itaque numquam qui
+                        earum
+                        autem.
+                    </q>
+                </div>
 
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </article>
+            
+            <div class="clr"></div>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="block2 dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
             <div class="clr"></div>
         </section>
+        <!--Review Section-->
 
     </div>
 
@@ -84,7 +132,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
