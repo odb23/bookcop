@@ -85,13 +85,13 @@ border-radius: 25px;
     background-color: black;
     color: white;
     padding: 10px 40px;
-    border-radius: 20px;
     border: none;
     display: flex;
     text-align: center;
     margin: 30px 0;
     position: absolute;
     left: 50%;
+    font-size: 16px;
     transform: translateX(-50%);
 }
 
@@ -135,39 +135,7 @@ border-radius: 25px;
     padding: 3.5rem;
     text-align: center;
   }
-
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
   
-  /* Position the "next  and prev button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev {
-    position: absolute;
-    left: 0;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-  }
-
   /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
@@ -202,15 +170,16 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
+    font-size: 12px;
 }
 
 footer .container1 {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 footer ul {
@@ -221,7 +190,7 @@ footer ul {
 
 footer li {
     display: inline;
-    padding: 7px;
+    padding: 4px 7px;
 }
 
 footer li:hover {
@@ -243,7 +212,6 @@ footer a:active {
 
 .footer-label {
     display: block;
-    padding-bottom: 3px;
 }
 
 .social {

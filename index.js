@@ -1,35 +1,33 @@
 document.getElementById("register").onclick = function () {
-    window.location.href = "./src/signUp/signUp.html";
+  window.location.href = "./src/signUp/signUp.html";
 };
 
 document.getElementById("signIn").onclick = function () {
-    window.location.href = "./src/signIn/signIn.html";
+  window.location.href = "./src/signIn/signIn.html";
 };
 
-var slideIndex = 1;
-showSlides(slideIndex);
+document.getElementById("get-started").onclick = function () {
+  window.location.href = "./src/signUp/signUp.html";
+};
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Review section slideshow
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndex++;
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  console.log(slides)
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500);
 }
