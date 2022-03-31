@@ -1,22 +1,10 @@
 *{
-    margin: 0;
-    box-sizing: border-box;   
-}
-
-body{
-    
-}
-
-#web-main-bg {
-    position: fixed;
-    background-color: #e6e6e6;
-    width: 50%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: -1;
+    margin: 0; 
+  box-sizing: border-box;   
 }
 
 .container{
+  margin-top: 3.5em;
     width: 50%;
     float: left;
     max-width: max-content;
@@ -34,6 +22,8 @@ body{
 }
 section {
     padding: 2.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
 /* Style inputs */
@@ -58,19 +48,19 @@ input[type=text], input[type=email], textarea {
     background-color: #45a049;
   }
   /* Clear floats after the columns */
+  .clear{
+    clear: both;
+  }
+
 .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .container, input[type=submit] {
       width: 100%;
       margin-top: 0;
-    }
-    #web-main-bg {
-        width: 100%;
     }
   }
