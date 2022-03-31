@@ -1,13 +1,13 @@
-document.getElementById("register").onclick = function () {
-  window.location.href = "./src/signUp/signUp.html";
-};
-
 document.getElementById("signIn").onclick = function () {
-  window.location.href = "./src/signIn/signIn.html";
+  window.location.href = "./src/signIn_and_signUp/signIn.html";
 };
 
+document.getElementById("register").onclick = function () {
+  window.location.href = "./src/signIn_and_signUp/signUp.html";
+};
+// get started button
 document.getElementById("get-started").onclick = function () {
-  window.location.href = "./src/signUp/signUp.html";
+  window.location.href = "./src/signIn_and_signUp/signUp.html";
 };
 
 // Review section slideshow
@@ -31,3 +31,4 @@ function showSlides() {
 
   setTimeout(showSlides, 2500);
 }
+
