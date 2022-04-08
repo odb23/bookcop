@@ -4,63 +4,17 @@
 }
 
 .container{
-  margin-top: 3.5em;
-    width: 50%;
-    float: left;
+  width: 80%;
+  margin: 0 auto;
     max-width: max-content;
 }
 
 .about{
     padding: 0 auto;
     padding: 3rem;
-    padding-top: 5rem;
     font-size: 2rem;
 }
 
 .about div {
     padding-bottom: 2em;
 }
-section {
-    padding: 2.5rem;
-    font-size: 1rem;
-    line-height: 1rem;
-}
-
-/* Style inputs */
-input[type=text], input[type=email], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  /* Clear floats after the columns */
-  .clear{
-    clear: both;
-  }
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .container, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
