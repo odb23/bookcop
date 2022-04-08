@@ -3,97 +3,50 @@
 
 <head>
     <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
-    <!--Left Navigation bar -->
-    <section id="nav-bar" class="container1">
-        <div id="logo">
-            <h2>BookCop</h2>
-        </div>
+    <header>
+        <nav class="container1">
+            <h1 class="nav-contents">BookCop</h1>
+            <input id="register" class="nav-contents btn" type="button" value="Register" />
+            <input id="signIn" class="nav-contents btn" type="button" value="Sign In" />
+        </nav>
+        <div class="clr"></div>
+    </header>
 
-        <div class="tab">
-            <button class="tablinks" name="Explore">Explore</button>
-            <button class="tablinks" name="Library">Library</button>
-            <button class="tablinks" name="Settings">Settings</button>
-            <button class="tablinks">Log out</button>
-        </div>
-    </section>
-    <!--/ Left Navigation bar -->
+    <div id="books-list" class="">
+        <nav id="read-nav">
+            <button class="read-tab">To Read</button>
+            <button id="Default" class="read-tab">Reading</button>
+            <button class="read-tab">Read</button>
+        </nav>
 
+        <section>
+            <!--To read Section-->
+            <div id="0" class="read-contents">
+                This is where boooks you are reading will be displayed.
+            </div>
 
-    <!--Main Container-->
-    <section class="container2">
-        <!--Default Homepage-->
-        <div id="HomePage" class="tab-contents">
-            <h1 id="greeting">Welcome, Odulaja Oluwadamilare.</h1>
+            <!--Reading Section-->
+            <div id="1" class="read-contents">
+                This is where boooks you have read will be displayed.
 
-            <h1 class="container2-h1">Your reading stats:</h1>
-            <article id="chart-card">
-                <canvas id="reading-donut"></canvas>
+            </div>
 
-                <div id="legend-container">
-                    <div class="legend-item" style="width: 125px;">
-                        <div class="legend" style="background-color: #51e55b;"></div>
-                        <h2>Read</h2>
-                        <p>100</p>
-                    </div>
-                    <div class="legend-item" style="width: 125px;">
-                        <div class="legend" style="background-color: #558eff;"></div>
-                        <h2>To Read</h2>
-                        <p>100</p>
-                    </div>
-                    <div class="legend-item" style="width: 150px;">
-                        <div class="legend" style="background-color: #ffea5f;"></div>
-                        <h2>Reading</h2>
-                        <p>100</p>
-                    </div>
-                </div>
-            </article>
+            <!--Read Section-->
+            <div id="2" class="read-contents">
+                This is where boooks to read will be displayed.
+            </div>
+        </section>
 
-            <h1 class="container2-h1">Trending Books:</h1>
-            <article> </article>
+    </div>
 
-            <aside class="article-container">
-                <h1 class="container2-h1">Top Readers:</h1>
-                <article> </article>
-            </aside>
+    <div id="book-view"> Book information, sessions, reviews and notes will be displayed here</div>
 
-            <div class="clr"></div>
-        </div>
-        <!--Default Homepage-->
-
-
-        <!--Explore-->
-        <div id="Explore" class="tab-contents">
-            <h1>EXPLORE</h1>
-            <p>This is this the Explore section. Nothing much to see for now</p>
-        </div>
-        <!--/Explore -->
-
-
-        <!--Library -->
-        <div id="Library" class="tab-contents">
-            <h1>LIBRARY</h1>
-            <p>This is this the library section. Nothing much to see for now</p>
-        </div>
-        <!--/Library -->
-
-
-        <!--Settings-->
-        <div id="Settings" class="tab-contents">
-            <h1>SETTINGS</h1>
-            <p>This is this the Settings section. Nothing much to see for now</p>
-        </div>
-        <!--/Settings -->
-
-
-    </section>
-    <!--Main Container-->
-    <div class="clr"></div>
-
-    <script type="module" src="homepage.js"></script>
+    <script src="homepage.js"></script>
 </body>
 
-</html>
+</html >
