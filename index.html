@@ -3,54 +3,61 @@
 
 <head>
     <title>
-        BookCop
+        <h1>
+            BookCop
+        </h1>
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <nav class="container1">
+        <nav class="container2">
             <h1 class="nav-contents">BookCop</h1>
-            <input id="register" class="nav-contents btn" type="button" value="Register" />
-            <input id="signIn" class="nav-contents btn" type="button" value="Sign In" />
+            <a class="nav-contents">About</a>
+            <a class="nav-contents">FAQs</a>
+            <a class="nav-contents">Contact Us</a>
+            <input id="register" class="nav-contents btn right" type="button" value="Register" />
+            <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
         </nav>
     </header>
+    <!--/Header-->
 
-    <div class="container2">
-        <main>
-            <div id="intro" class="animate__animated animate__fadeInDown">
-                <div class="icon-group">
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                </div>
-                <h1>
-                    Enjoy reading your books with BookCop by tracking your daily reading progress,
-                    organizing your reading list, adding quick notes to books, reviewing books, sharing and discusing
-                    insights
-                    with other
-                    readers.
-                </h1>
-                <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn" type="button"
-                    value="Get Started" />
+    <main class="container2">
+        <div id="intro" class="animate__animated animate__fadeInDown">
+            <div class="icon-group">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </div>
-        </main>
+            <h1>
+                Enjoy reading your books with BookCop by tracking your daily reading progress,
+                organizing your reading list, adding quick notes to books, reviewing books, sharing and discusing
+                insights
+                with other
+                readers.
+            </h1>
+            <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn" type="button"
+                value="Get Started" />
+        </div>
+    </main>
 
-        <!--Review Section-->
-        <section id="review-section">
-            <div class="block1">
-                <h1 class="animate__animated animate__backInLeft">
-                    Reviews<br />
-                    from users:
-                </h1>
-            </div>
-           <div class="block">
+    <!--Review Section-->
+    <section id="review-section">
+        <div class="block1">
+            <h1 class="animate__animated animate__backInLeft">
+                Reviews<br />
+                from users:
+            </h1>
+        </div>
+        <div class="block">
             <article class="block2 animate__animated animate__backInRight slideshow-container">
                 <div class="slide animate__animated animate__fadeInRight">
-                    
+
                     <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
                         reiciendis et facilis quam ut amet,
                         error
@@ -71,7 +78,7 @@
                     <p>- ODB gan gan</p>
                 </div>
                 <div class="slide animate__animated animate__fadeInRight">
-                    
+
                     <q> nihil minima pariatur voluptatem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                         libero
                         reiciendis et facilis quam ut amet,
@@ -82,7 +89,7 @@
                     <p>- Daniel Don</p>
                 </div>
                 <div class="slide animate__animated animate__fadeInRight">
-                    
+
                     <q>reiciendis et facilis quam ut amet, Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Harum libero
                         error
@@ -93,23 +100,21 @@
                     <p>- Angela Morris</p>
                 </div>
             </article>
-            
+
             <div class="clr"></div>
 
             <!-- Dots/bullets/indicators -->
             <div class="block2 dot-container">
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span> 
-                <span class="dot" ></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
 
             <div class="clr"></div>
-           </div>
-        </section>
-        <!--Review Section-->
-
-    </div>
+        </div>
+    </section>
+    <!--Review Section-->
 
     <footer>
         <div class="container1">
@@ -131,7 +136,7 @@
             <p style="text-align: right; padding-top: 10px;"> © 2022, BookCop.</p>
         </div>
     </footer>
-    
+
     <script src="index.js"></script>
 
 </body>
