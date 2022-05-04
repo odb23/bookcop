@@ -1,35 +1,60 @@
-#intro .icon-group {
+main{
+    margin: 6rem 0;
+}
+
+#intro {
+    padding: 1rem;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#intro i{
-    font-size: 5em;
-    margin: 40px 80px;
-    margin-top: 70px;
-    position: relative;
-}
-
-#intro h1{
-    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    font-size: larger;
 }
 
 #get-started{
     background-color: black;
     color: white;
-    padding: 10px 40px;
+    padding: 10px 45px;
     border: none;
     text-align: center;
     margin: 30px 0;
-    position: absolute;
-    left: 50%;
-    font-size: 1.5rem;
-    transform: translateX(-50%);
 }
 
 #get-started:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+main img {
+    width: 50%;
+}
+
+#description{
+    width: 100%;
+    max-height: 730px;
+    margin: 12rem 0;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#description-bg{
+    background: white;
+    padding: 4rem 2rem;
+    border: solid 2px rgba(0, 0, 0, 0.1); 
+    font-size: 2.5rem;
+}
+
+#description-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#description h3 {
+    padding: 2rem 0;
+}
+
+#description img{
+    width: 10rem ;
 }
 
 #review-section{
@@ -101,18 +126,31 @@
   .author {color: cornflowerblue;}
 
 
-@media screen and (max-width: 750px) {
-    .block1, .block{
+@media screen and (max-width: 770px) {
+    #hero-innerContainer{
+        display: block;
         width: 100%;
     }
 
-    #intro i{
-        font-size: 3em;
-        margin: 40px 25px;
+    #intro{
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
+
+    main img {
+        width: 100%;
+    }
+
+    .block1, .block{
+        width: 100%;
+    }
+    #description-list{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
 
     #review-section{
-       margin: 55px auto;
+       margin: 20rem auto;
     }
 }
-

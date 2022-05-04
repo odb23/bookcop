@@ -3,9 +3,7 @@
 
 <head>
     <title>
-        <h1>
-            BookCop
-        </h1>
+        BookCop
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -16,35 +14,69 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="container2">
-            <h1 class="nav-contents">BookCop</h1>
-            <a class="nav-contents">About</a>
-            <a class="nav-contents">FAQs</a>
-            <a class="nav-contents">Contact Us</a>
-            <input id="register" class="nav-contents btn right" type="button" value="Register" />
-            <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
+        <nav class="container2 flex">
+            <div class="flex">
+                <h1 class="nav-contents">BookCop</h1>
+                <a class="nav-contents">About</a>
+                <a class="nav-contents">FAQs</a>
+                <a class="nav-contents">Contact Us</a>
+            </div>
+            <div class="flex">
+                <input id="register" class="nav-contents btn right" type="button" value="Register" />
+                <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
+            </div>
         </nav>
     </header>
     <!--/Header-->
 
-    <main class="container2">
-        <div id="intro" class="animate__animated animate__fadeInDown">
-            <div class="icon-group">
-                <i class="fa fa-book" aria-hidden="true"></i>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+    <!--Hero section-->
+    <main class="container1">
+        <div id="hero-innerContainer" class="animate__animated animate__fadeInDown flex">
+            <div id="intro" class="animate__animated animate__fadeInDown">
+                <h1>
+                    Enjoy reading your books with BookCop by tracking your daily reading progress,
+                    organizing your reading list, adding quick notes to books, reviewing books, sharing and discusing
+                    insights
+                    with other
+                    readers.
+                </h1>
+                <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn" type="button"
+                    value="Get Started" />
             </div>
-            <h1>
-                Enjoy reading your books with BookCop by tracking your daily reading progress,
-                organizing your reading list, adding quick notes to books, reviewing books, sharing and discusing
-                insights
-                with other
-                readers.
-            </h1>
-            <input id="get-started" class="animate__animated animate__delay-1s animate__fadeIn" type="button"
-                value="Get Started" />
+            <img src="./src/assets/intro.jpg" alt="intro">
         </div>
     </main>
+    <!--/Hero section-->
+
+    <!--Description-->
+    <section id="description">
+        <div id="description-bg"class="container2">
+            <h3>BookCop is a platform for readers to achieve their reading goals by tracking their reading progress and
+                taking notes during each reading session. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Velit, quos. Quo voluptatibus amet, in voluptas iusto tempore suscipit.</h2>
+
+                <div id="description-list">
+                    <div>
+                        <img src="./src/assets/books.gif" alt="book-pile">
+                    <h5>Organize your books</h5>.
+                    </div>
+                    <div>
+                        <img src="./src/assets/book.gif" alt="book-pile">
+                    <h5>Read in sessions</h5>.
+                    </div>
+                    <div>
+                        <img src="./src/assets/record.gif" alt="book-pile">
+                    <h5>Record your reading progress</h5>.
+                    </div>
+                    <div>
+                        <img src="./src/assets/notebook.gif" alt="book-pile">
+                    <h5>Take notes while reading</h5>.
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <!--/Description-->
 
     <!--Review Section-->
     <section id="review-section">
