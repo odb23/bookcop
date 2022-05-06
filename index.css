@@ -31,17 +31,21 @@ main img {
 #description{
     width: 100%;
     max-height: 730px;
-    margin: 12rem 0;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 3rem 0;
+    margin-top: 12rem;
+    background: rgb(222, 222, 222)/*rgba(0, 0, 0, 0.1)*/;
+    padding: 6rem 2rem;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 #description-bg{
-    background: white;
-    padding: 4rem 2rem;
-    border: solid 2px rgba(0, 0, 0, 0.1); 
-    font-size: 2.5rem;
+    background: rgb(222, 222, 222);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#description h3 {
+    padding-bottom: 2rem;
 }
 
 #description-list{
@@ -49,8 +53,11 @@ main img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-#description h3 {
-    padding: 2rem 0;
+.description-list-item{
+    background-color: white;
+    margin: 0.4rem;
+    border-radius: 8px;
+    padding: 1rem 0;
 }
 
 #description img{
@@ -59,34 +66,35 @@ main img {
 
 #review-section{
     text-align: center;
-    margin: 150px auto;
+    margin: 0 auto;
+    padding: 8rem 0;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: larger;
 }
 
 .block{
-    width: 57%;
-    position: relative;
+    width: 75%;
 }
 
-.block1{
+#review-section h1{
     text-align: center;
-    width: 43%;
-    padding: 50px;
+    padding: 3rem;
     box-sizing: border-box;
 }
 
 .block2 {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
-    max-height: 15em;
 }
 .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
+    background: inherit;
   }
 
   .slide {
@@ -108,7 +116,7 @@ main img {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #717171;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -116,7 +124,7 @@ main img {
   
   /* Add a background color to the active dot/circle */
   .active {
-    background-color: #717171;
+    background-color: #bbb;
   }
   
   /* Add an italic font style to all quotes */
@@ -124,6 +132,15 @@ main img {
   
   /* Add a blue color to the author */
   .author {color: cornflowerblue;}
+
+
+  #people{
+      display: block;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+padding: 4rem 0;
+  }
 
 
 @media screen and (max-width: 770px) {
@@ -142,15 +159,15 @@ main img {
         width: 100%;
     }
 
-    .block1, .block{
-        width: 100%;
-    }
     #description-list{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     
-
     #review-section{
-       margin: 20rem auto;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+    }
+    #people{
+  width:90%;
     }
 }

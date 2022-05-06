@@ -2,7 +2,7 @@
     margin: 0;
     cursor: context-menu;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -54,16 +54,22 @@ header nav {
 }
 
 .btn{
-    padding: 5px 18px;
+    padding: 8px 24px;
     cursor: pointer;
     border: none;
     background-color: inherit;
     color: inherit;
 }
 
+.btn-border{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
 .btn:hover {
-background-color:  #ddd;
-border-radius: 25px;
+background-color:#ddd;  
+border-radius: 4px;
 color: black;
 }
 
@@ -96,7 +102,7 @@ footer li {
     padding: 4px 7px;
 }
 
-footer li:hover {
+footer,header li,a:hover {
     color: #e3e6e8;
     cursor: pointer;
     text-decoration: underline;
@@ -109,7 +115,7 @@ footer a {
     cursor: pointer;
 }
 
-footer a:active {
+ a:active {
     color: black;
 }
 
