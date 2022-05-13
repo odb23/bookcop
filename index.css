@@ -1,9 +1,9 @@
-main{
+main {
     margin: 6rem 0;
 }
 
 #intro {
-    padding: 1rem;
+    padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,7 +11,7 @@ main{
     font-size: larger;
 }
 
-#get-started{
+#get-started {
     background-color: black;
     color: white;
     padding: 10px 45px;
@@ -21,24 +21,25 @@ main{
 }
 
 #get-started:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 main img {
     width: 50%;
 }
 
-#description{
+#description {
     width: 100%;
     max-height: 730px;
     margin-top: 12rem;
-    background: rgb(222, 222, 222)/*rgba(0, 0, 0, 0.1)*/;
-    padding: 6rem 2rem;
+    background: rgb(222, 222, 222)
+    ;
+    padding: 12rem 2rem;
     text-align: center;
     font-size: 2.5rem;
 }
 
-#description-bg{
+#description-bg {
     background: rgb(222, 222, 222);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -48,23 +49,23 @@ main img {
     padding-bottom: 2rem;
 }
 
-#description-list{
+#description-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.description-list-item{
+.description-list-item {
     background-color: white;
     margin: 0.4rem;
     border-radius: 8px;
     padding: 1rem 0;
 }
 
-#description img{
-    width: 10rem ;
+#description img {
+    width: 10rem;
 }
 
-#review-section{
+#review-section {
     text-align: center;
     margin: 0 auto;
     padding: 8rem 0;
@@ -76,11 +77,11 @@ main img {
     font-size: larger;
 }
 
-.block{
+.block {
     width: 75%;
 }
 
-#review-section h1{
+#review-section h1 {
     text-align: center;
     padding: 3rem;
     box-sizing: border-box;
@@ -92,26 +93,27 @@ main img {
     padding: 20px;
     box-sizing: border-box;
 }
+
 .slideshow-container {
     position: relative;
     background: inherit;
-  }
+}
 
-  .slide {
+.slide {
     display: none;
     padding: 3.5rem;
     text-align: center;
-  }
-  
-  /* The dot/bullet/indicator container */
+}
+
+/* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
     padding: 20px;
     border: none;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -120,36 +122,79 @@ main img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active {
+}
+
+/* Add a background color to the active dot/circle */
+.active {
     background-color: #bbb;
-  }
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+#support {
+    background-image: url("https://lightleader.in/wp-content/uploads/2018/11/contactus-background.png");
+ min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;  
+    justify-content: center;
+    padding: 8rem 2rem;
+}
+
+#support img {
+    margin: auto 0;
+    position: absolute;
+    mix-blend-mode: overlay;
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+}
 
 
-  #people{
-      display: block;
-width: 50%;
-margin-left: auto;
-margin-right: auto;
-padding: 4rem 0;
-  }
+.support-items {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+#support-contact{
+    margin: 2rem;
+}
+
+#support-contact:hover {
+    background-color:rgb(125, 125, 125);  
+    border-radius: 4px;
+    color: white;
+}
 
 
 @media screen and (max-width: 770px) {
-    #hero-innerContainer{
+
+    header a,
+    #register {
+        display: none;
+    }
+
+    #hero-innerContainer {
         display: block;
         width: 100%;
     }
 
-    #intro{
+    #intro,
+    .support-items {
         width: 100%;
         align-items: center;
         text-align: center;
@@ -159,15 +204,32 @@ padding: 4rem 0;
         width: 100%;
     }
 
-    #description-list{
+    #description-list {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    
-    #review-section{
+
+    #review-section {
         padding-top: 20rem;
         padding-bottom: 10rem;
     }
-    #people{
-  width:90%;
+
+    #people {
+        width: 90%;
+    }
+
+    #support h1 {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #description {
+        max-height: 900px;
+    }
+
+    #review-section {
+        padding-top: 12rem;
+        padding-bottom: 10rem;
     }
 }

@@ -5,9 +5,10 @@
     <title>
         BookCop
     </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
@@ -16,14 +17,14 @@
     <header>
         <nav class="container2 flex">
             <div class="flex">
-                <h1 class="nav-contents">BookCop</h1>
-                <a class="nav-contents">About</a>
-                <a class="nav-contents">FAQs</a>
-                <a class="nav-contents">Contact Us</a>
+                <h1 class="nav-contents animate__animated animate__wobble">BookCop</h1>
+                <a href="src/screens/about _us/about_us.html" class="nav-contents">About</a>
+                <a href="src/screens/faqs/faqs.html" class="nav-contents">FAQs</a>
+                <a href="src/screens/contact/contact.html" class="nav-contents">Contact Us</a>
             </div>
             <div class="flex">
-              <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
-              <input id="register" class="nav-contents btn right btn-border" type="button" value="Register" />
+                <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
+                <input id="register" class="nav-contents btn right btn-border" type="button" value="Register" />
             </div>
         </nav>
     </header>
@@ -85,7 +86,7 @@
         </h1>
         <div class="block">
             <article class="block2 animate__animated animate__backInRight slideshow-container">
-                <div class="slide animate__animated animate__fadeInRight">
+                <div class="slide animate__animated animate__fadeIn animate__slow">
 
                     <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
                         reiciendis et facilis quam ut amet,
@@ -96,7 +97,7 @@
                     </q>
                     <p style="padding-top: 2rem;">- Jane Doe</p>
                 </div>
-                <div class="slide animate__animated animate__fadeInRight">
+                <div class="slide animate__animated animate__fadeIn animate__slow">
                     <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
                         reiciendis et facilis quam ut amet,
                         error
@@ -106,7 +107,7 @@
                     </q>
                     <p style="padding-top: 2rem;">- ODB gan gan</p>
                 </div>
-                <div class="slide animate__animated animate__fadeInRight">
+                <div class="slide animate__animated animate__fadeIn animate__slow">
 
                     <q> nihil minima pariatur voluptatem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                         libero
@@ -117,7 +118,7 @@
                     </q>
                     <p style="padding-top: 2rem;">- Daniel Don</p>
                 </div>
-                <div class="slide animate__animated animate__fadeInRight">
+                <div class="slide animate__animated animate__fadeIn ">
 
                     <q>reiciendis et facilis quam ut amet, Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Harum libero
@@ -143,14 +144,13 @@
             <div class="clr"></div>
         </div>
     </section>
-    <img id="people" src="./src/assets/people.jpg" alt="people-reading" >
-    <!--Review Section-->
 
     <!--Contact/Support Link-->
-    <section>
-        <h1>Stay in touch with us</h1>
-       <p> We would like to help you have the best reading experience on this platform. Feel free to contact us and we will get back to you as soon as we can.</p>
-       <input id="register" class="btn btn-border" type="button" value="Contact Us" />
+    <section id="support">
+            <h1 class="support-items">STAY IN TOUCH WITH US</h1>
+                <p class="support-items"> We would like to help you have the best reading experience on this platform. Feel free to contact us
+                    and we will get back to you as soon as we can. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero error voluptates eum nesciunt id eligendi, aliquam consequuntur quibusdam distinctio facere esse provident itaque libero quo aut necessitatibus laboriosam! Dignissimos?</p>
+            <input id="support-contact" class="btn btn-border" type="button" value="Contact Us" />
     </section>
     <!--/Contact/Support Link-->
 
@@ -158,10 +158,11 @@
         <div class="container1">
             <p class="footer-label">Company:</p>
             <ul>
-                <li><a href="src/about _us/about_us.html">About us</a></li>
-                <li><a href="src/terms/terms.html">Terms of service</a></li>
-                <li><a href="src/terms/terms.html">Privacy</a></li>
-                <li><a href="src/faqs/faqs.html">Help/FAQs</a></li>
+                <li><a href="src/screens/about _us/about_us.html">About us</a></li>
+                <li><a href="src/screens/contact/contact.html">Contact us</a></li>
+                <li><a href="src/screens/terms/terms.html">Terms of service</a></li>
+                <li><a href="src/screens/terms/terms.html">Privacy</a></li>
+                <li><a href="src/screens/faqs/faqs.html">Help/FAQs</a></li>
             </ul>
         </div>
         <div class="container1">
@@ -171,8 +172,8 @@
             <a href="https://www.instagram.com/odb.23/" class="fa fa-instagram social"></a>
             <a href="https://www.linkedin.com/in/odb23/" class="fa fa-linkedin social"></a>
             <a href="https://github.com/odb23" class="fa fa-github social"></a>
-            <p style="text-align: right; padding-top: 10px;"> © 2022, BookCop.</p>
         </div>
+        <p style="text-align: right; padding-top: 2.5rem;"> © 2022, BookCop. All rights reserved.</p>
     </footer>
 
     <script src="index.js"></script>

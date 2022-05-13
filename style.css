@@ -10,6 +10,16 @@ body {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ a:active {
+    color: black;
+}
+
 
 .clr{
     clear: both;
@@ -78,17 +88,16 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 8px 0;
+    padding: 4rem 0.825rem;
     font-size: 1.5rem;
     box-sizing: border-box;
 }
 
 footer .container1 {
-    margin-bottom: 8px;
+    margin-bottom: 4rem;
 }
 
 footer ul {
@@ -102,25 +111,16 @@ footer li {
     padding: 4px 7px;
 }
 
-footer,header li,a:hover {
-    color: #e3e6e8;
+header li,a:hover {
+    color: #d5d5d5;
     cursor: pointer;
     text-decoration: underline;
    
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
- a:active {
-    color: black;
-}
-
 .footer-label {
     display: block;
+    padding-bottom: 1rem;
 }
 
 .social {

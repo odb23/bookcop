@@ -5,21 +5,30 @@
     <title>
         Help/FAQS
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../style.css" type="text/css">
+    <link rel="stylesheet" href="../../../style.css" type="text/css">
     <link rel="stylesheet" href="faqs.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <nav class="container1">
-            <h1 class="nav-contents">BookCop</h1>
-            <input id="register" class="nav-contents btn" type="button" value="Register" />
-            <input id="signIn" class="nav-contents btn" type="button" value="Sign In" />
-            <div class="clr"></div>
+        <nav class="container2 flex">
+            <div class="flex">
+                <h1 class="nav-contents animate__animated animate__wobble">BookCop</h1>
+                <a href="#" class="nav-contents">About</a>
+                <a href="../faqs/faqs.html" class="nav-contents">FAQs</a>
+                <a href="../contact/contact.html" class="nav-contents">Contact Us</a>
+            </div>
+            <div class="flex">
+                <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
+                <input id="register" class="nav-contents btn right btn-border" type="button" value="Register" />
+            </div>
         </nav>
     </header>
+    <!--/Header-->
     <div class="container2">
         <h1 class="space">FAQS</h1>
         <div class="accordion">Section 1</div>
@@ -87,7 +96,7 @@
             <p style="text-align: right; padding-top: 10px;"> © 2022, BookCop.</p>
         </div>
     </footer>
-    <script src="../header.js"></script>
+    <script src="../../header.js"></script>
 </body>
 
 </html>

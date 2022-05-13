@@ -3,19 +3,28 @@
 
 <head>
     <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
-    <header>
-        <nav class="container1">
-            <h1 class="nav-contents">BookCop</h1>
-            <input id="register" class="nav-contents btn" type="button" value="Register" />
-            <input id="signIn" class="nav-contents btn" type="button" value="Sign In" />
+     <!--Header-->
+     <header>
+        <nav class="container2 flex">
+            <div class="flex">
+                <h1 class="nav-contents animate__animated animate__wobble">BookCop</h1>
+                <a href="#" class="nav-contents">About</a>
+                <a href="../faqs/faqs.html" class="nav-contents">FAQs</a>
+                <a href="../contact/contact.html" class="nav-contents">Contact Us</a>
+            </div>
+            <div class="flex">
+                <input id="signIn" class="nav-contents btn right" type="button" value="Sign In" />
+                <input id="register" class="nav-contents btn right btn-border" type="button" value="Register" />
+            </div>
         </nav>
-        <div class="clr"></div>
     </header>
+    <!--/Header-->
 
     <div id="books-list" class="">
         <nav id="read-nav">
@@ -46,7 +55,7 @@
 
     <div id="book-view"> Book information, sessions, reviews and notes will be displayed here</div>
 
-    <script src="../header.js"></script>
+    <script src="../../header.js"></script>
     <script src="homepage.js"></script>
 </body>
 
