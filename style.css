@@ -7,7 +7,7 @@
 
 body {
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
@@ -48,6 +48,15 @@ header{
     cursor: auto;
     box-shadow: 0 3px 3px 2px #ccc;
     color: rgba(255, 255, 255, 0.9)
+}
+
+
+.f-medium{
+    font-size: 1.5vw;
+}
+
+.f-large{
+    font-size: 2vw
 }
 
 header nav {
@@ -140,4 +149,8 @@ header li,a:hover {
 
   .social:hover {
     opacity: 0.7;
+  }
+
+  @media screen and (max-width: 420px) {
+      
   }
