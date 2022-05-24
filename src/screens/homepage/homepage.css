@@ -1,6 +1,9 @@
+header {
+    box-shadow: none;
+}
+
 #books-list{
     position: fixed;
-    padding-top: 3.5em;
     height: 100%;
     width: 40%;
     position: fixed;
@@ -16,7 +19,6 @@
 #book-view{
     box-sizing: border-box;
     padding: 5px;
-    padding-top: 3.5em;
     height: 100%;
     right: 0;
     width: 60%;
@@ -26,15 +28,16 @@
 
 #read-nav{ 
     box-sizing: border-box;
-    background-color:  #e6e6e6;
+    background-color:  rgb(60, 60, 60);
     text-align: center;
 }
 
 .read-tab{
-    background-color: #e6e6e6;
+    background-color: rgb(60, 60, 60);
     border: none;
     cursor: pointer;
     padding: 14px 18px;
     font-size: 1.5rem;
     width: 25%;
+    color: white;
 }
